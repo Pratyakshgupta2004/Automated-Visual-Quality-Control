@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AVQC System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>🔍 PCB Defect Detection System</h1>
+    <p>AI-Powered Automated Visual Quality Control</p>
+  </div>
+
+  <div class="container">
+
+    <!-- Upload Box -->
+    <div class="upload-box" onclick="document.getElementById('fileInput').click()">
+      <h2>📁 Image Upload Karo</h2>
+      <p>PCB ki image yahan drop karo ya click karo</p>
+
+      <img id="preview" class="preview-img" />
+
+      <br>
+      <button class="btn">📷 Image Choose Karo</button>
+      <input type="file" id="fileInput" accept="image/*" hidden>
+    </div>
+
+    <!-- Detect Button -->
+    <div style="text-align:center;">
+      <button class="btn detect-btn" onclick="detect()">🚀 Defect Detect Karo</button>
+    </div>
+
+    <!-- Result -->
+    <div id="resultBox" class="result-box">
+      <h2 id="status">Waiting...</h2>
+      <img id="resultImg" />
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

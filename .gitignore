@@ -1,0 +1,8 @@
+dataset/
+dataset_raw/
+runs/
+model/
+*.pt
+venv/
+__pycache__/
+.env
